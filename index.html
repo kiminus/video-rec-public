@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Recommendation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎥 Video Recommendation Demo</h1>
+        <p>Click on any video to see personalized recommendations</p>
+    </header>
+
+    <main>
+        <section id="selected-video" class="hidden">
+            <h2>Now Viewing</h2>
+            <div id="current-video" class="video-display"></div>
+        </section>
+
+        <section id="recommendations" class="hidden">
+            <h2>Recommended For You</h2>
+            <div id="recommended-videos" class="video-grid"></div>
+        </section>
+
+        <section id="all-videos">
+            <h2>Browse Videos</h2>
+            <div class="filter-bar">
+                <label for="category-filter">Filter by category:</label>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="technology">Technology</option>
+                    <option value="science">Science</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="education">Education</option>
+                </select>
+            </div>
+            <div id="video-catalog" class="video-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Demo Video Recommendation Site - Source code available upon request</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
